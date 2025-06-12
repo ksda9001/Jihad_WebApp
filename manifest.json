@@ -9,7 +9,7 @@
         /*应用版本名称*/
         "code" : ""
     },
-    "description" : "",
+    "description" : "免费影视大全",
     /*应用描述信息*/
     "icons" : {
         "72" : "icon.png"
@@ -26,15 +26,12 @@
     "permissions" : {
         "Accelerometer" : {},
         "Audio" : {},
-        "Messaging" : {},
         "Cache" : {
             "description" : "管理应用缓存"
         },
-        "Camera" : {},
         "Console" : {
             "description" : "跟踪调试输出日志"
         },
-        "Contacts" : {},
         "Device" : {},
         "Downloader" : {},
         "Events" : {
@@ -42,7 +39,6 @@
         },
         "File" : {},
         "Gallery" : {},
-        "Geolocation" : {},
         "Invocation" : {},
         "Orientation" : {},
         "Proximity" : {},
@@ -51,18 +47,10 @@
         "Runtime" : {},
         "XMLHttpRequest" : {},
         "Zip" : {},
-        "Barcode" : {},
-        "Maps" : {},
-        "Speech" : {},
         "Webview" : {},
         "NativeUI" : {},
         "Navigator" : {},
         "NativeObj" : {},
-        "Push" : {},
-        "Share" : {},
-        "OAuth" : {},
-        "Payment" : {},
-        "Statistic" : {},
         "UIWebview" : {}
     },
     "plus" : {
@@ -132,7 +120,8 @@
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
-                ]
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
             },
             "orientation" : [ "portrait-primary" ],
             /*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
@@ -161,7 +150,15 @@
                         /*iPhone4设置页面程序图标，分辨率：29x29*/
                         "settings-retina" : "",
                         /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
-                        "settings-retina8" : ""
+                        "settings-retina8" : "",
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
                     },
                     "ipad" : {
                         "normal" : "",
@@ -182,19 +179,30 @@
                         /*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
                         "settings-normal" : "",
                         /*iPad设置页面程序图标，分辨率：29x29*/
-                        "settings-retina" : ""
-                    }
+                        "settings-retina" : "",
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "appstore" : "unpackage/res/icons/1024x1024.png"
                 },
                 "android" : {
                     "mdpi" : "",
                     /*普通屏程序图标，分辨率：48x48*/
                     "ldpi" : "",
                     /*大屏程序图标，分辨率：48x48*/
-                    "hdpi" : "",
+                    "hdpi" : "unpackage/res/icons/72x72.png",
                     /*高分屏程序图标，分辨率：72x72*/
-                    "xhdpi" : "",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
                     /*720P高分屏程序图标，分辨率：96x96*/
-                    "xxhdpi" : ""
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
                 }
             },
             "splashscreen" : {
@@ -240,8 +248,14 @@
                     "xhdpi" : "",
                     /*720P高分屏启动图片，分辨率：720x1242*/
                     "xxhdpi" : ""
-                }
+                },
+                "useOriginalMsgbox" : false
+            },
+            "plugins" : {
+                "statics" : {}
             }
         }
-    }
+    },
+    "screenOrientation" : [ "portrait-primary" ],
+    "fullscreen" : true
 }
